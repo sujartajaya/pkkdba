@@ -126,7 +126,7 @@ class Users extends BaseController
 			} else {
 				$password1 = $this->request->getVar('password1');
 				$password2 = $this->request->getVar('password2');
-				$id = $this->request->getVar('id_update');
+				$id = $this->request->getVar('id_password');
 
 				if ($password1 != $password2) {
 					$this->output['errors'] = ['password2' => 'Password1 and Password2 not matches'];
